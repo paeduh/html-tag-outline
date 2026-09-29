@@ -5,7 +5,7 @@
 
 A VS Code extension that gives HTML files a readable **Outline** and **Breadcrumbs**. It lists each element by its tag name and optional `#id`, and leaves out the class list.
 
-![Built-in outline (left) compared with HTML Tag Outline (right)](images/comparison.png)
+![Built-in outline (left) compared with HTML Tag Outline (right)](https://raw.githubusercontent.com/paeduh/html-tag-outline/main/images/comparison.png)
 
 ## Features
 
@@ -42,7 +42,7 @@ The classes stay in your code where you need them. The Outline and Breadcrumbs g
 
 | Built-in HTML symbols                                  | HTML Tag Outline                                      |
 | ------------------------------------------------------ | ----------------------------------------------------- |
-| ![Built-in symbols with Tailwind classes](images/before.png) | ![Tag-only symbols](images/after.png)          |
+| ![Built-in symbols with Tailwind classes](https://raw.githubusercontent.com/paeduh/html-tag-outline/main/images/before.png) | ![Tag-only symbols](https://raw.githubusercontent.com/paeduh/html-tag-outline/main/images/after.png) |
 
 ## Installation
 
