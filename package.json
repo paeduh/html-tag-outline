@@ -1,0 +1,95 @@
+{
+  "name": "html-tag-outline",
+  "displayName": "HTML Tag Outline",
+  "version": "0.1.0",
+  "description": "Clean Outline and Breadcrumbs for HTML: show only tag names (optionally #id), without the class clutter from Tailwind & co.",
+  "categories": [
+    "Other",
+    "Programming Languages"
+  ],
+  "keywords": [
+    "breadcrumbs",
+    "html",
+    "outline",
+    "symbols",
+    "tailwind",
+    "tailwindcss",
+    "utility classes"
+  ],
+  "homepage": "https://github.com/paeduh/html-tag-outline#readme",
+  "bugs": {
+    "url": "https://github.com/paeduh/html-tag-outline/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Patrick Hofer",
+    "email": "paedu.hofer@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paeduh/html-tag-outline.git"
+  },
+  "publisher": "paeduh",
+  "main": "./dist/extension.js",
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc -p .",
+    "screenshots": "node scripts/screenshots.ts",
+    "package": "vsce package --no-dependencies",
+    "publish": "vsce publish --no-dependencies",
+    "vscode:prepublish": "tsup --minify"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "@types/vscode": "~1.80.0",
+    "@vscode/vsce": "^4.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "^7.0.2"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "htmlTagOutline.toggle",
+        "title": "Toggle",
+        "category": "HTML Tag Outline"
+      }
+    ],
+    "configuration": {
+      "title": "HTML Tag Outline",
+      "properties": {
+        "htmlTagOutline.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Provide tag-only symbols for Outline and Breadcrumbs. When off, only the built-in HTML symbols are shown."
+        },
+        "htmlTagOutline.showId": {
+          "type": "boolean",
+          "default": true,
+          "description": "Append #id to the tag name when the element has an id attribute."
+        },
+        "htmlTagOutline.logTiming": {
+          "type": "boolean",
+          "default": false,
+          "description": "Log file size, element count and parse time for each parse to the 'HTML Tag Outline' output channel."
+        }
+      }
+    }
+  },
+  "activationEvents": [
+    "onLanguage:html"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "allowScripts": {
+    "esbuild@0.27.7": true,
+    "@vscode/vsce-sign@2.1.0": true
+  }
+}

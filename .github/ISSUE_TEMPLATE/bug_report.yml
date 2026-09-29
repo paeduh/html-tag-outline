@@ -1,0 +1,41 @@
+name: Bug report
+description: Something is shown wrong in the Outline or Breadcrumbs, or the extension misbehaves.
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: What do the Outline / Breadcrumbs show, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: html
+    attributes:
+      label: Minimal HTML to reproduce
+      render: html
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Output channel log (optional)
+      description: Enable `htmlTagOutline.logTiming` and paste lines from the "HTML Tag Outline" output channel.
+      render: text
+  - type: input
+    id: vscode
+    attributes:
+      label: VS Code version
+      placeholder: "1.105.0"
+    validations:
+      required: true
+  - type: input
+    id: extension
+    attributes:
+      label: Extension version
+      placeholder: "0.1.0"
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: macOS 26 / Windows 11 / Ubuntu 24.04
