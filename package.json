@@ -1,7 +1,7 @@
 {
   "name": "html-tag-outline",
   "displayName": "HTML Tag Outline",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Clean Outline and Breadcrumbs for HTML: show only tag names (optionally #id), without the class clutter from Tailwind & co.",
   "categories": [
     "Other",
