@@ -42,7 +42,7 @@
     "vscode:prepublish": "tsup --minify"
   },
   "devDependencies": {
-    "@types/node": "^20.19.0",
+    "@types/node": "^26.6.3",
     "@types/vscode": "~1.80.0",
     "@vscode/vsce": "^4.0.0",
     "tsup": "^8.5.1",
